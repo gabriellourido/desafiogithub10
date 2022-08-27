@@ -12,6 +12,7 @@ a{text-decoration: none;}
 .padB-20{padding-bottom: 20px;}
 .bgPrimario{background-color: rgba(0, 89, 255, 0.719);}
 .bgSecundario{background-color: rgba(0, 89, 255, 0.479);}
+nav ul li{background-image: radial-gradient(rgb(14, 122, 211),rgb(8, 70, 185),rgb(56, 6, 240));}
 
 /*INDEX*/
 /*GRID INDEX*/
@@ -67,4 +68,13 @@ header,ul,footer{display: flex;}
 /*DESKTOP*/
 @media only screen and (min-width: 1024px){
 
+}
+
+@keyframes movimiento{
+    50%{transform: rotate(45deg);}
+}
+.animacionImg{
+    animation-name: movimiento;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
 }
